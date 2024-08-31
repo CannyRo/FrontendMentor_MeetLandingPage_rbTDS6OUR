@@ -9,23 +9,65 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+  <header class="header">
+    <nav class="nav">
+      <img src="./assets/logo.svg" alt="Logo of the brand Meet" class="nav--logo">
+    </nav>
+    <div class="hero">
+      <div class="hero__content">
+        <h1 class="hero--title">Group Chat for Everyone</h1>
+        <p class="hero--text">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="button__container">
+          <button class="btn btn-green">Download <span class="btn-version">v1.3</span></button>
+          <button class="btn btn-small btn-purple">What is it?</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="bullet">
+      <div class="bullet--hr"></div>
+      <div class="bullet--item">
+        01
+      </div>
+    </div>
+    <div class="mosaic">
+      <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="A woman in videocall" class="mosaic--image">
+      <img src="./assets/desktop/image-women-videochatting.jpg" alt="Three old friends looking at a smartphone" class="mosaic--image">
+      <img src="./assets/desktop/image-men-in-meeting.jpg" alt="A teacher and his student in a virtual classroom" class="mosaic--image">
+      <img src="./assets/desktop/image-man-texting.jpg" alt="A smiling man looking at his phone" class="mosaic--image">
+    </div>
+    <div class="argumentation">
+      <p class="argumentation--subtitle">Built for modern use</p>
+      <h2 class="argumentation--title">Smarter meetings, all in one place</h2>
+      <p class="argumentation--text">Send messages, share files, show your screen, and record your meetings — all in one 
+        workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="bullet bullet-footer">
+      <div class="bullet--hr"></div>
+      <div class="bullet--item">
+        02
+      </div>
+    </div>
+    <div class="argumentation argumentation-footer">
+      <h2 class="argumentation--title">Experience more together</h2>
+      <p class="argumentation--text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button class="btn btn-purple">Download <span class="btn-version">v1.3</span></button>
+    </div>
+    <div class="signature">
+      <p class="signature--text">
+        Challenge by 
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="signature--link">Frontend Mentor</a>
+        .
+      </p>
+      <p class="signature--text">
+        Coded by 
+        <a href="https://cannyro.github.io/hire_mr_canny/en" class="signature--link">WhatCannyDev</a>
+        .
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
