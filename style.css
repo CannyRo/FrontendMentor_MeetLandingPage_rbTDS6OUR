@@ -274,7 +274,10 @@
     .mosaic{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 24px;
+        gap: 12px;
+    }
+    .mosaic--image{
+        height: 160px;
     }
     .argumentation--subtitle{
         font-size: 14px;
