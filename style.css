@@ -26,21 +26,19 @@
     display: flex;
     justify-content: center;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
 .hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 272px 32px 32px 32px; */
-    /* padding: 64px 32px 32px 32px; */
-    /* padding: 0; */
     padding-top: 64px;
-    /* padding-top: 272px; */
     padding-bottom: 32px;
     overflow: hidden;
-    /* background-image: url('./assets/tablet/image-hero.png');
-    background-repeat: no-repeat;
-    background-size: auto 160px;
-    background-position: left 49% top 64px; */
 }
 .hero--image-bg{
     width: 100%;
@@ -88,6 +86,7 @@
     position: relative;
     padding: 16px 40px;
     width: fit-content;
+    max-width: 193px;
     color: var(--white);
     font-size: 16px;
     line-height: 150%;
@@ -151,9 +150,9 @@
     padding: 32px;
     gap: 16px;
     width: 100%;
+    max-width: 1120px;
 }
 .mosaic--image{
-    /* width: 147.5px; */
     width: auto;
     height: 144px;
     border-radius: 8px;
@@ -211,17 +210,17 @@
     top: 140px;
     content: '';
     width: 100%;
-    height: 374px;
+    height: 375px;
     background-color: var(--cyan-600);
     opacity: 0.9;
     z-index: 0;
 }
 .footer::after{
     position: absolute;
-    top: 0;
+    top: -10px;
     content: '';
     width: 100%;
-    height: 140px;
+    height: 150px;
     background-color: var(--white);
 }
 .argumentation-footer{
@@ -298,6 +297,81 @@
         background-position: center top -82px;
     }
     .footer::before{
-        height: 320px;
+        height: 321px;
+    }
+}
+@media(min-width: 1440px){
+    .header{
+        padding: 80px 80px 0 80px;
+    }
+    .hero--image-bg{
+        display: none;
+    }
+    .hero__content{
+        padding: 23px 80px 55px 80px;
+    }
+    
+    .hero--title{
+        margin: 0 0 32px 0;
+        font-size: 64px;
+        line-height: 70px;
+    }
+    .hero--text{
+        margin: 0 0 32px 0;
+        font-size: 18px;
+    }
+    .mosaic{
+        gap: 24px;
+        padding: 32px 80px;
+    }
+    .mosaic--image{
+        height: 256px;
+    }
+    .argumentation--subtitle{
+        font-size: 16px;
+        line-height: 110%;
+    }
+    .argumentation--title{
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .argumentation--text{
+        font-size: 18px;
+        max-width: 544px;
+    }
+    .bullet-footer{
+        padding-top: 40px;
+    }
+    .argumentation-footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        text-align: start;
+        padding: 52px 32px 0 32px;
+        width: 100%;
+        max-width: 1120px;
+    }
+    .argumentation--title-margin {
+        margin: 0;
+        max-width: 378px;
+    }
+    .argumentation--text-max{
+        max-width: 355px;
+        text-align: start;
+    }
+    .btn-24 {
+        margin-top: 0;
+    }
+    .footer{
+        padding-bottom: 112px;
+        background-size: 100% auto;
+        background-position: center top -262px;
+    }
+    .footer::before{
+        top: 148px;
+        height: 313px;
+    }
+    .footer::after{
+        height: 158px;
     }
 }
