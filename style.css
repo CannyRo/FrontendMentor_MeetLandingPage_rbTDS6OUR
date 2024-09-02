@@ -3,8 +3,10 @@
     /* == Colors == */
     --cyan-600 : hsl(192, 37%, 48%);
     --cyan-300 : hsl(192, 90%, 77%);
+    --cyan-hover : hsl(192, 54%, 64%); /* 71C0D4 */
     --purple-600 : hsl(268, 34%, 53%);
     --purple-300 : hsl(268, 100%, 86%);
+    --purple-hover : hsl(268, 55%, 71%); /* #B18BDD */
     --slate-900 : hsl(240, 21%, 20%);
     --slate-600 : hsl(240, 10%, 57%);
     --slate--300 : hsl(240, 18%, 85%);
@@ -96,12 +98,19 @@
     border: none;
     border-radius: 29px;
     z-index: 1;
+    cursor: pointer;
 }
 .btn-cyan{
     background-color: var(--cyan-600);
 }
+.btn-cyan:hover, .btn-cyan:focus, .btn-cyan:active{
+    background-color: var(--cyan-hover);
+}
 .btn-purple{
     background-color: var(--purple-600);
+}
+.btn-purple:hover, .btn-purple:focus, .btn-purple:active{
+    background-color: var(--purple-hover);
 }
 .btn-16{
     margin-top: 16px;
